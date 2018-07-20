@@ -1,0 +1,8 @@
+<component name="CopyrightManager">
+  <settings>
+    <module2copyright>
+      <element module="Copyright xml scope" copyright="Fattazzo xml default" />
+      <element module="Copyright scope" copyright="Fattazzo default" />
+    </module2copyright>
+  </settings>
+</component>

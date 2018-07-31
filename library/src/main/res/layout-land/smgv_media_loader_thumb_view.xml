@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><!--
   ~
   ~ Project: scrolling-media-gallery-view
-  ~ File: activity_main.xml
+  ~ File: smgv_media_loader_thumb_view.xml
   ~
   ~ Created by fattazzo
   ~ Copyright © 2018 Gianluca Fattarsi. All rights reserved.
@@ -27,19 +27,34 @@
   ~
   -->
 
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/smgv_container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp">
 
-    <com.gmail.fattazzo.scrollingmediagalleryview.view.ScrollingMediaGalleryView
-        android:id="@+id/scroll_gallery_view"
+    <ImageView
+        android:id="@+id/smgv_media_loader_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"/>
+
+    <ImageView
+        android:id="@+id/smgv_media_loader_overlay_imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000"
-        app:smgv_show_thumbs="true"
-        app:smgv_thumbs_height_percentage="0.92"/>
+        android:layout_centerInParent="true"
+        android:padding="2dp"
+        android:visibility="gone" />
 
-</android.support.constraint.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/smgv_media_loader_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

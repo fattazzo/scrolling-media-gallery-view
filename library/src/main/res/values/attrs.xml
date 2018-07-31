@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="ScrollingMediaGalleryView">
+        <attr name="smgv_show_thumbs" format="boolean" />
+        <attr name="smgv_thumbs_height_percentage" format="float" />
+    </declare-styleable>
+</resources>

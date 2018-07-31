@@ -1,0 +1,8 @@
+<resources>
+    <string name="smgv_media_action_download">Download</string>
+    <string name="smgv_media_action_share">Share</string>
+
+    <string name="smgv_media_download_message">Downloading selected media</string>
+    
+    <string name="smgv_permission_not_granted">Permission not granted</string>
+</resources>
